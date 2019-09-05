@@ -1,15 +1,17 @@
-import React from "react";
+import React, {Component} from "react";
 import ReactDOM from "react-dom";
 
-import "./styles.css";
+import PageWrapper from './components/PageWrapper'
+import Home from './components/pages/Home'
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
-  );
+class App extends Component {
+  render(){
+    return (
+        <PageWrapper>
+          <Home/>
+        </PageWrapper>
+    );
+  }
 }
 
 const rootElement = document.getElementById("root");
